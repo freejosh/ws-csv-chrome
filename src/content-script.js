@@ -1,3 +1,5 @@
+import './any-date-parser';
+
 ///
 // choosing an element on the page
 ///

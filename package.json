@@ -1,0 +1,11 @@
+{
+  "name": "chrome-ws-csv",
+  "version": "0.1.0",
+  "author": "Josh Freeman <freejosh@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "esbuild": "^0.20.2",
+    "esbuild-plugin-clean": "^1.0.1",
+    "esbuild-plugin-copy": "^2.1.1"
+  }
+}

@@ -7,6 +7,6 @@ chrome.action.onClicked.addListener((tab) => {
 
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
-    files: ['any-date-parser.js', 'content-script.js'],
+    files: ['content-script.js'],
   });
 });
