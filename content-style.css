@@ -1,0 +1,50 @@
+.wscsv-ui {
+  position: fixed;
+  z-index: 999999999;
+}
+
+#wscsv-button {
+  bottom: 15px;
+  left: 15px;
+}
+
+body.wscsv-choose * {
+  cursor: pointer;
+}
+
+.wscsv-hover {
+  outline: solid 1px red !important;
+  background-color: rgba(255, 0, 0, 0.1) !important;
+}
+
+#wscsv-match {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#wscsv-match button[data-excluded="true"] {
+  opacity: 0.5;
+}
+
+/* TODO: add :after that shows a visual indicator, to highlight invisible items selected */
+.wscsv-match-highlight {
+  outline: solid 1px green !important;
+  background-color: rgba(0, 255, 0, 0.1) !important;
+}
+
+#wscsv-match-ok {
+  bottom: 60px;
+  left: 15px;
+}
+
+#wscsv-save {
+  bottom: 15px;
+  left: 100px;
+  display: inline-block;
+  padding: 5px;
+  border: solid 1px black;
+  background-color: white;
+}
