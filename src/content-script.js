@@ -1,4 +1,4 @@
-import './any-date-parser';
+import dateParser from 'any-date-parser';
 
 ///
 // choosing an element on the page
@@ -269,8 +269,7 @@ function assignToHeading(data, label, node) {
 (async function main() {
   const formats = {
     date(rawValue) {
-      // fromString from any-date-parser
-      const date = Date.fromString(rawValue);
+      const date = dateParser.fromString(rawValue);
       const d = date.getUTCDate();
       const m = date.getUTCMonth() + 1;
       const y = date.getUTCFullYear();
