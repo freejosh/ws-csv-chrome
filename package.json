@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "author": "Josh Freeman <freejosh@gmail.com>",
   "private": true,
+  "scripts": {
+    "build": "node build.mjs"
+  },
   "dependencies": {
     "any-date-parser": "^1.5.4",
     "esbuild": "^0.20.2",
