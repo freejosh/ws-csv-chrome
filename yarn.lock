@@ -280,6 +280,23 @@ esbuild-plugin-copy@^2.1.1:
     fs-extra "^10.0.1"
     globby "^11.0.3"
 
+esbuild-plugin-define@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/esbuild-plugin-define/-/esbuild-plugin-define-0.4.0.tgz#9d9a12cd660f57e91d8484edc10016faa1396076"
+  integrity sha512-ylJeiuafplaDsKE+S9hDRF/puxZ+uymHzr/lOYEmSD8jnDewKDMgl9e/YzBpSd3IvdfbxxyK3xCs2josZjSwPQ==
+
+esbuild-plugin-environment@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/esbuild-plugin-environment/-/esbuild-plugin-environment-0.3.0.tgz#196a4ae7633f87aed3190134b9ba66589567f9da"
+  integrity sha512-r+zquuUd3JmtbYei8ZpkP124zVZjTExFjkt34G8nJqRe5uU468u08a97NhSONINfVuMzQyoKj+B5lkduJ0+fKQ==
+  dependencies:
+    esbuild-plugin-define "^0.4.0"
+
+esbuild-plugin-write-file@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/esbuild-plugin-write-file/-/esbuild-plugin-write-file-0.0.4.tgz#97ef462560c4692660890117db359ed027dff358"
+  integrity sha512-QvpDPb4hiu4dYoPlxP4GDRwAOqA5HHNzCIjhksf13SvxObSrXd14HSuDWZuAyUuNMLguWdmJikrgkvCPpONyYw==
+
 esbuild@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.20.2.tgz#9d6b2386561766ee6b5a55196c6d766d28c87ea1"
