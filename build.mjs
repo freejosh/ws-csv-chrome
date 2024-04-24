@@ -8,6 +8,7 @@ import { copy } from 'esbuild-plugin-copy';
     bundle: true,
     sourcemap: true,
     outdir: './build',
+    minify: true,
     plugins: [
       clean({
         patterns: ['./build/*'],
