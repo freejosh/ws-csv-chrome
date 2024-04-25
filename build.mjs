@@ -7,17 +7,19 @@ import write from 'esbuild-plugin-write-file';
 
 const pkg = JSON.parse(fs.readFileSync('./package.json'));
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const BUILD_DIR = './build';
 const MAIN_FILE = 'main.js';
 const BACKGROUND_FILE = 'background.js';
 
 (async () => {
-  await esbuild.build({
+  const ctx = await esbuild.context({
     entryPoints: [`./src/${BACKGROUND_FILE}`, `./src/${MAIN_FILE}`],
     bundle: true,
-    sourcemap: true,
+    sourcemap: !isProd,
     outdir: BUILD_DIR,
-    minify: true,
+    minify: isProd,
     plugins: [
       clean({
         patterns: [`${BUILD_DIR}/*`],
@@ -51,4 +53,8 @@ const BACKGROUND_FILE = 'background.js';
       }),
     ],
   });
+
+  if (!isProd) {
+    await ctx.watch();
+  }
 })();

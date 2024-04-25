@@ -4,7 +4,8 @@
   "author": "Josh Freeman <freejosh@gmail.com>",
   "private": true,
   "scripts": {
-    "build": "node build.mjs"
+    "build": "NODE_ENV=production node build.mjs",
+    "dev": "node build.mjs"
   },
   "dependencies": {
     "any-date-parser": "^1.5.4",
